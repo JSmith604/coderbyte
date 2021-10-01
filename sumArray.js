@@ -5,6 +5,9 @@ function sumArray(arr) {
   let largestNum = sortedArr.pop();
 
   let num = 0;
-  tempArr.forEach(item => (num += item));
+  sortedArr.forEach(item => (num += item));
   return largestNum === num;
 }
+
+console.log(sumArray([1,6,4,2,13]));
+console.log(sumArray([1,2,4,34,22]));
